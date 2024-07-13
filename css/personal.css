@@ -1,0 +1,378 @@
+
+.btn-port{
+  background-color: #9400FF;
+  color: #E4F1FF;
+}
+.tiny5-regular {
+font-family: "Tiny5", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+h2{
+font-family: "Tiny5", sans-serif;
+text-align: center;
+}
+h1{
+margin-bottom: 0px;
+margin-top: 0px;
+}
+body{
+background-color: #27005D;
+}
+p,
+h1,
+h2{
+color: #E4F1FF;
+}
+
+.skills-container{
+background-color: #E4F1FF;
+color: #27005D;
+}
+.prog-lan > li{
+display: none;
+}
+.frameworks > li{
+  display: none;
+  }
+  .prog-lan > li{
+    display: none;
+    }
+  .front-end > li{
+       display: none;
+    }
+.data-sc >li{
+  display: none;
+}
+.hardware >li{
+  display: none;
+}
+
+
+.main {
+  display: none;
+  flex-direction: column;
+  gap: 0.5em;
+  position: fixed;
+  top: 50%;
+  display: none;
+  opacity: .9;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.gmail {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: black !important;;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.linkedin {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #0077b5;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: yellow !important;
+}
+
+.card1:hover .gmail {
+  fill: white;
+  
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #0077b5;
+}
+
+.card2:hover .linkedin {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+.button {
+  display: flex;
+  --color: rgb(200, 222, 236);
+  padding: .5rem 1rem;
+  background-color: transparent;
+  color: var(--color);
+  font-weight: bolder;
+  text-transform: uppercase;
+  display: inline-block;
+  justify-content:center;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  border-radius: 5px;
+  top: 40%;
+  height: auto;
+  width: 20svh;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+  
+.arrow {
+  display: inline-flex;
+  position: relative;
+  width: 30px;
+  height: 15px;
+  margin-left: 0.5rem;
+}
+
+.arrow::after,
+.arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-color: var(--color);
+}
+
+.arrow::after {
+  width: 10px;
+  height: 0;
+  border: 2px solid var(--color);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.arrow::before {
+  width: 10px;
+  height: 10px;
+  border-top: 4px solid var(--color);
+  border-right: 4px solid var(--color);
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.button:hover {
+  background-color: var(--color);
+  color: rgb(123, 45, 164);
+}
+
+.button:hover .arrow {
+  transform: translateX(10px);
+}
+
+.button:hover .text {
+  transform: translateX(10px);
+}
+
+.button:hover .arrow::after {
+  width: 25px;
+  border-color: white;
+}
+
+.button:hover .arrow::before {
+  left: 15px;
+  border-color: white;
+}
+
+.button,
+.text,
+.arrow,
+.arrow::after,
+.arrow::before,
+.button::before,
+.button::after {
+  transition: all 0.3s, box-shadow 0.2s;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  border-radius: 5px;
+  border: solid 3px var(--color);
+  border-right-color: transparent;
+  background-color: transparent;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  border-radius: 5px;
+  border: solid 3px var(--color);
+  border-left-color: transparent;
+  background-color: transparent;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button:hover:before,
+.button:hover:after {
+  width: 50% !important;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 7px rgba(79, 78, 105, 0.295);
+}
+
+
+
+
+
+.btn-show-more {
+  display: inline-block;
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  color: #8c9eff;
+  background-color: #9400FF;
+  height: auto;
+  width: auto;
+  font-weight: 500;
+  
+ }
+ 
+ .btn-show-more::before,
+ .btn-show-more::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ .btn-show-more::before {
+  left: -10px;
+  background: #240046;
+ }
+ 
+ .btn-show-more::after {
+  right: -10px;
+  background: #5a189a;
+ }
+ 
+ .btn-show-more:hover::before,
+ .btn-show-more:hover::after {
+  width: 58%;
+ }
+ 
+ .btn-show-more:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+ }
+ 
+ .btn-show-more span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }
+ @media (max-width: 480px){
+.button{
+  position: absolute;
+}
+ }
