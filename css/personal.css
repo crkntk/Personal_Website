@@ -329,7 +329,12 @@ display: none;
   background-color: #9400FF;
   height: auto;
   width: auto;
-  font-weight: 500;
+  font-weight: 350;
+  
+ }
+ .btn-show-more span{
+  color:white !important;
+  
   
  }
  
