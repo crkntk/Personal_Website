@@ -32,7 +32,7 @@ $(".button").on("click", function(){
 });
 $(".btn-show-more").on("click",function(e){
     var currId = e.currentTarget.id.slice(4);
-   
+   console.log(currId);
     $("."+currId +" > li").toggle("slow");
    
 
@@ -51,7 +51,7 @@ $("#btn-git").on("click",function(e){
 
  $("#btn-gmail").on("click",function(e){
     
-    window.location.href = "mailto:royal.soft2319@gmail.com";
+    window.location.href = "mailto:astrophim@gmail.com";
  
  });
  $("#btn-discord").on("click",function(e){
