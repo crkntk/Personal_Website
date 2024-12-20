@@ -45,12 +45,21 @@
        flex-direction: column;
        align-items: center;
        justify-content: center;
-       height: 300px;
-       margin: 20px;
-       border-color: #AF47D2;
+       height: 500px;
+       width: 400px;
+       margin: 10px;
+       padding: 50px;
+       border-color: #769FCD;
        border-width: 2px;
        border-style: solid;
+       text-align: center !important;
+       row-gap: 20px;
+       
 
+    }
+    .project-container:hover{
+      background-color: #B9D7EA;
+      transition: .25s;
     }
     .project-title{
        text-align: center;
@@ -69,6 +78,37 @@
     h2{
         text-align: center;
         margin-bottom: 10px;
+    }
+    .description{
+      text-align: center;
+      height: 200px;
+      width: 300px;
+      color: black;
+      border-width: 10px;
+      border-color: #AF47D2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding: 0px;
+      margin: 0px;
+      height: 200px;
+      width: auto;
+      transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
+    }
+    
+    .icon-square{
+      align-self: center;
+      background-color: #D6E6F2;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .btn{
+      align-self: center;
     }
     </style>
 <body>
@@ -89,11 +129,11 @@
                 </div>
                 <div class="description-container">
                   <h3 class=" project-title">BJC-Teacher-Tracker</h3>
-                  <p>The Beauty and Joy of Computing (BJC) is an introductory computer science curriculum developed at UC Berkeley meant for high school freshmen up to college freshmen.  </p>
-                  <a href="https://github.com/mitchell2001wong/BJC-Teacher-Tracker" class="btn btn-primary">
-                    GitHub Link
-                  </a>
+                  <p class="description">The Beauty and Joy of Computing (BJC) is an introductory computer science curriculum developed at UC Berkeley meant for high school freshmen up to college freshmen.  </p>
                 </div>
+                <a href="https://github.com/mitchell2001wong/BJC-Teacher-Tracker" class="btn btn-primary">
+                  GitHub Link
+                </a>
               </div>
             </div>
           </div>
@@ -113,11 +153,11 @@
                 </div>
                 <div class="project-description">
                   <h3 class="project-title">Housing Project Analysis</h3>
-                  <p>Specified and fitted a linear model to a few features of the housing data to predict housing prices. Analyze the error of the model and brainstorm ways to improve the model's performance.  </p>
-                  <a href="https://github.com/crkntk/Housing_Project" class="btn btn-primary">
-                    GitHub Link
-                  </a>
+                  <p class="description">Specified and fitted a linear model to a few features of the housing data to predict housing prices. Analyze the error of the model and brainstorm ways to improve the model's performance.  </p>
                 </div>
+                <a href="https://github.com/crkntk/Housing_Project" class="btn btn-primary">
+                  GitHub Link
+                </a>
               </div>
             </div>
           </div>
@@ -140,11 +180,11 @@
                 </div>
                 <div class="project-description">
                   <h3 class="project-title">Virtual Memory Management</h3>
-                  <p>Demand Paging is a virtual memory management mechanism that would only load and map pages from persistent storage to memory when needed, i.e., when a process tries to access a page that is not residing in the physical memory (which would result in a page fault). The OS will then try to find a free (unoccupied) physical frame, load, and map the page to the free physical frame as part of the page fault handling.  </p>
-                  <a href="https://github.com/crkntk/A3CS480_BACKUP" class="btn btn-primary">
-                    GitHub Link
-                  </a>
+                  <p class="description">Virtual memory management mechanism that would only load and map pages from persistent storage to memory when needed. The OS will try to find a free (unoccupied) physical frame, load, and map the page to the free physical frame as part of the page fault handling.  </p>
                 </div>
+                <a href="https://github.com/crkntk/A3CS480_BACKUP" class="btn btn-primary">
+                  GitHub Link
+                </a>
               </div>
               <div class="col d-flex align-items-start project-container">
                 <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
@@ -155,11 +195,11 @@
                 </div>
                 <div class="project-description">
                   <h3 class="project-title ">Scheduling Algorithm</h3>
-                  <p>Scheduling algorithm for a CPU burst and IO bursts implementing Round Robin and First Come First serve. Assuming a uniprocessor environment, a simulator for short-term process scheduling using a First Come First Served (FCFS) strategy and a Round Robin (RR) strategy. </p>
-                  <a href="https://github.com/crkntk/Scheduling" class="btn btn-primary">
-                    GitHub Link
-                  </a>
+                  <p class="description">Scheduling algorithm for a CPU burst and IO bursts implementing Round Robin and First Come First serve. Assuming a uniprocessor environment, a simulator for short-term process scheduling using a First Come First Served (FCFS) strategy and a Round Robin (RR) strategy. </p>
                 </div>
+                <a href="https://github.com/crkntk/Scheduling" class="btn btn-primary">
+                  GitHub Link
+                </a>
               </div>
               <div class="col d-flex align-items-start project-container">
                 <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
@@ -169,11 +209,12 @@
                 </div>
                 <div class="project-description">
                   <h3 class="project-title ">Employee Tree</h3>
-                  <p>Implemented a tree data structure to store and retrieve the organization chart information, as well as write code for testing your implementation.</p>
-                  <a href="https://github.com/crkntk/employeeTree" class="btn btn-primary">
-                    GitHub Link
-                  </a>
+                  <p class="description">Implemented a tree data structure to store and retrieve the organization chart information, as well as write code for testing your implementation.</p>
+                  
                 </div>
+                <a href="https://github.com/crkntk/employeeTree" class="btn btn-primary">
+                  GitHub Link
+                </a>
               </div>
             </div>
           </div>
@@ -193,7 +234,7 @@
                 </div>
                 <div class="project-description">
                   <h3 class="project-title">Create World Game</h3>
-                  <p>This is a small game created in java. Its called create your own world. It randomly creates a new world in the game when you input a seed. algs4 library has to be inported in order to use the draw funcitons.</p>
+                  <p class="description">This is a small game created in java. Its called create your own world. It randomly creates a new world in the game when you input a seed. algs4 library has to be inported in order to use the draw funcitons.</p>
                   <a href="https://github.com/crkntk/create_world" class="btn btn-primary">
                     GitHub Link
                   </a>
@@ -217,14 +258,14 @@
                         <div class="col-lg-3 text-center my-5 project-container" style="height: 400px;">
                         <img class="bd-placeholder-img " src ="./assets/images/Movies.png.png" height="200"/> 
                         <h3 class="project-title">Movie Ranking</h3>
-                        <p>Using simple html ranked best movies</p>
+                        <p class="description">Using simple html ranked best movies</p>
                         <p><a class="btn btn-primary" href="./public/movie-ranking.html">View Project »</a></p>
                         </div><!-- /.col-lg-4 -->
 
                         <div class="col-lg-4 text-center my-5 project-container" style="height: 400px;">
                         <img src ="./assets/images/Birthday.png.png" height="200"/> 
                         <h3 class="project-title">Birthday Invite</h3>
-                        <p>Birthday invitation using html and links</p>
+                        <p class="description">Birthday invitation using html and links</p>
                         <p><a class="btn btn-primary" href="#">View Project »</a></p>
                         </div><!-- /.col-lg-4 -->
               </div>
