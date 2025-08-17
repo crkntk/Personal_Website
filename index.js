@@ -40,12 +40,12 @@ $(".btn-show-more").on("click",function(e){
 
 $("#btn-linkedin").on("click",function(e){
     
-   window.location.href = "https://www.linkedin.com/in/carlos-reyes-165a9521a/";
+   window.open('https://www.linkedin.com/in/carlos-r-165a9521a/','_blank','noopener')
 
 });
 $("#btn-git").on("click",function(e){
     
-    window.location.href = "https://github.com/crkntk";
+   window.open('https://github.com/crkntk','_blank','noopener')
  
  });
 
@@ -56,7 +56,7 @@ $("#btn-git").on("click",function(e){
  });
  $("#btn-discord").on("click",function(e){
     
-    window.location.href = "http://discord.gg/carlos_18747";
+    window.open('https://discord.gg/carlos_18747','_blank','noopener')
  
  });
  $(".btn-port").on("click",function(e){
@@ -64,5 +64,6 @@ $("#btn-git").on("click",function(e){
     window.location.href = "./portfolio/index.html";
  
  });
+
 
  
